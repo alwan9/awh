@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+}
+
+.logo {
+  height: 35px;
+}
+header {
+  background-image: url(/bahan/IMG_20211231_233040_891\ 1.png);
+  height: 100vh;
+  width: 100vw;
+}
+
+.burger {
+  width: 20px;
+}
+
+.kotak {
+  background-color: red;
+  padding: 20px;
+  margin: 20px;
+}
+.kotak1 {
+  width: 300px;
+  height: 300px;
+}
+.kotak2 {
+  width: 500px;
+  height: 300px;
+}
+.kotak3 {
+  width: 400px;
+  height: 300px;
+}
+.kotak4 {
+  width: 700px;
+  height: 300px;
+}
+.kotak5 {
+  width: 650px;
+  height: 300px;
+}
+
+@media only screen and (max-width: 720px) {
+  .k1 {
+    display: block;
+  }
+}
+
+/* live subscibe */
+.live-yt {
+  width: 100vw;
+  background-image: url(/bahan/vector\ \(1\).png);
+}
+
+.subscribe {
+  width: 100vw;
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+.sub {
+  text-align: center;
+  margin: 2%;
+  font-size: 2.3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .sub {
+    font-size: 1rem;
+  }
+}
