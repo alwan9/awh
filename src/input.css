@@ -7,7 +7,7 @@ body {
 }
 
 .logo {
-  height: 35px;
+  height: 25px;
 }
 header {
   background-image: url(bahan/IMG_20211231_233040_891\ 1.png);
@@ -19,42 +19,67 @@ header {
   width: 20px;
 }
 
+.jk1 {
+  margin-top: 100px;
+}
+
 .kotak {
   background-color: red;
-  padding: 20px;
   margin: 20px;
 }
 .kotak1 {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 .kotak2 {
-  width: 500px;
-  height: 300px;
+  width: 450px;
+  height: 250px;
 }
 .kotak3 {
-  width: 400px;
-  height: 300px;
+  width: 350px;
+  height: 250px;
 }
 .kotak4 {
-  width: 700px;
+  width: 600px;
+  margin-bottom: 200px;
   height: 300px;
 }
 .kotak5 {
-  width: 650px;
+  width: 500px;
+  margin-bottom: 200px;
   height: 300px;
 }
+/* global */
+.fl {
+  width: 200px;
+  padding-top: 30px;
+}
 
-@media only screen and (max-width: 720px) {
-  .k1 {
-    display: block;
-  }
+.jk {
+  font-size: 2.7rem;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+footer {
+  width: 100%;
+  height: 350px;
+  background-color: #a600bf;
+}
+.f3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.ms {
+  width: 30px;
+  height: 30px;
+  bottom: 0%;
+  right: 0%;
 }
 
 /* live subscibe */
 .live-yt {
   width: 100vw;
-  background-image: url(bahan/vector\ \(1\).png);
+  background-image: url(bahan/vector.png);
 }
 
 .subscribe {
@@ -70,8 +95,63 @@ header {
   font-size: 2.3rem;
 }
 
-@media screen and (max-width: 600px) {
+/* responsive global */
+@media screen and (max-width: 750px) {
+  .j {
+    font-size: 2.4rem;
+  }
+  .sj {
+    font-size: 1.4rem;
+  }
   .sub {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+  .jk {
+    font-size: 2.2rem;
+    margin-left: 25px;
+    margin-top: 50px;
+  }
+  .k1 {
+    display: block;
+  }
+  .logo {
+    width: 170px;
+    height: 23px;
+  }
+  nav {
+    padding: 1px;
+  }
+  nav a {
+    font-size: 0.5rem;
+    display: none;
+  }
+  .ts {
+    display: none;
+  }
+  .f3 {
+    margin-top: 30px;
+  }
+}
+/* responsive kotak*/
+@media screen and (max-width: 750px) {
+  .kotak1 {
+    width: 140px;
+    height: 140px;
+  }
+  .kotak2 {
+    width: 190px;
+    height: 140px;
+  }
+  .kotak3 {
+    width: 120px;
+    height: 140px;
+  }
+  .kotak4 {
+    width: 290px;
+    height: 140px;
+  }
+  .kotak5 {
+    width: 200px;
+    height: 140px;
   }
 }
