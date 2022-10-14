@@ -10,7 +10,7 @@ body {
   height: 25px;
 }
 header {
-  background-image: url(/bahan/IMG_20211231_233040_891\ 1.png);
+  background-image: url(bahan/IMG_20211231_233040_891\ 1.png);
   height: 100vh;
   width: 100vw;
 }
@@ -77,7 +77,7 @@ header {
 /* live subscibe */
 .live-yt {
   width: 100vw;
-  background-image: url(/bahan/vector.png);
+  background-image: url(bahan/vector.png);
 }
 
 .subscribe {
