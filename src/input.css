@@ -23,7 +23,7 @@ body {
   z-index: -99;
   opacity: 3%;
   position: absolute;
-  background-image: url(/kiri.png);
+  background-image: url(../bahan/kiri.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 1500px;
@@ -32,7 +32,7 @@ body {
 .bg-lg2 {
   opacity: 3%;
   position: absolute;
-  background-image: url(/kanan.png);
+  background-image: url(../bahan/kanan.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
