@@ -44,7 +44,7 @@ body {
   height: 25px;
 }
 header {
-  background-image: url(/bahan/bg.png);
+  background-image: url(../bahan/bg.png);
   height: 100vh;
   width: 100vw;
 }
@@ -64,28 +64,28 @@ header {
 .kotak1 {
   width: 250px;
   height: 250px;
-  background-image: url(/bahan/produk/1.jpg);
+  background-image: url(../bahan/produk/1.jpg);
   background-position: center;
   background-size: cover;
 }
 .kotak2 {
   width: 450px;
   height: 250px;
-  background-image: url(/bahan/produk/2.jpg);
+  background-image: url(../bahan/produk/2.jpg);
   background-position: center;
   background-size: cover;
 }
 .kotak3 {
   width: 350px;
   height: 250px;
-  background-image: url(/bahan/produk/3.png);
+  background-image: url(../bahan/produk/3.png);
   background-position: center;
   background-size: cover;
 }
 .kotak4 {
   width: 600px;
   margin-bottom: 200px;
-  background-image: url(/bahan/produk/4.jpg);
+  background-image: url(../bahan/produk/4.jpg);
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -93,7 +93,7 @@ header {
 .kotak5 {
   width: 500px;
   margin-bottom: 200px;
-  background-image: url(/bahan/produk/5.jpg);
+  background-image: url(../bahan/produk/5.jpg);
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -116,9 +116,7 @@ header {
   margin-left: 40px;
   margin-bottom: 20px;
 }
-.tk {
-  margin-left: 40px;
-}
+
 .fr {
   margin: 5%;
 }
@@ -137,7 +135,7 @@ header {
 /* live subscibe */
 .live-yt {
   width: 100vw;
-  background-image: url(/bahan/vector.png);
+  background-image: url(../bahan/vector.png);
 }
 
 .subscribe {
@@ -155,6 +153,10 @@ header {
 
 /* responsive global */
 @media screen and (max-width: 750px) {
+  .tk {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
   .j {
     font-size: 2.4rem;
   }
@@ -205,7 +207,7 @@ header {
     z-index: -99;
     opacity: 3%;
     position: absolute;
-    background-image: url(/webdesain/kiri.png);
+    background-image: url(webdesain/kiri.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 364px;
@@ -214,7 +216,7 @@ header {
   .bg-lg2 {
     opacity: 3%;
     position: absolute;
-    background-image: url(/webdesain/kanan.png);
+    background-image: url(webdesain/kanan.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
