@@ -650,10 +650,6 @@ video {
      object-position: center;
 }
 
-.p-20 {
-  padding: 5rem;
-}
-
 .pl-10 {
   padding-left: 2.5rem;
 }
@@ -701,7 +697,15 @@ body {
 }
 
 .f1 {
-  width: 720px;
+  width: 100%;
+}
+
+.lr {
+  width: 85%;
+  margin-left: 50px;
+  margin-top: 70px;
+  margin-right: 50px;
+  margin-bottom: 70px;
 }
 
 .logo {
@@ -957,6 +961,11 @@ header {
   .tk {
     margin-right: 30px;
     margin-left: 30px;
+  }
+
+  .lr {
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }
 
