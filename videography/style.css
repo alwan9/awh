@@ -16,7 +16,7 @@
   z-index: -99;
   opacity: 3%;
   position: absolute;
-  background-image: url(/webdesain/kiri.png);
+  background-image: url(webdesain/kiri.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 1500px;
@@ -26,7 +26,7 @@
   opacity: 3%;
   z-index: -99;
   position: absolute;
-  background-image: url(/webdesain/kanan.png);
+  background-image: url(webdesain/kanan.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -54,7 +54,7 @@
     z-index: -99;
     opacity: 3%;
     position: absolute;
-    background-image: url(/webdesain/kiri.png);
+    background-image: url(webdesain/kiri.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 364px;
@@ -63,7 +63,7 @@
   .bg-lg2 {
     opacity: 3%;
     position: absolute;
-    background-image: url(/webdesain/kanan.png);
+    background-image: url(webdesain/kanan.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
