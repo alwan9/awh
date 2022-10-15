@@ -5,12 +5,46 @@
 body {
   background-color: black;
 }
+.nav {
+  padding-top: 35px;
+  padding-right: 50px;
+}
 
+.logo {
+  height: 20px;
+  width: 170px;
+}
+.jdll {
+  margin-bottom: 50px;
+}
+
+.bg-lg1 {
+  top: 0;
+  z-index: -99;
+  opacity: 3%;
+  position: absolute;
+  background-image: url(/kiri.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1500px;
+  height: 1500px;
+}
+.bg-lg2 {
+  opacity: 3%;
+  position: absolute;
+  background-image: url(/kanan.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  right: 0;
+  width: 1500px;
+  height: 1500px;
+}
 .logo {
   height: 25px;
 }
 header {
-  background-image: url(bahan/bg.png);
+  background-image: url(/bahan/bg.png);
   height: 100vh;
   width: 100vw;
 }
@@ -30,28 +64,28 @@ header {
 .kotak1 {
   width: 250px;
   height: 250px;
-  background-image: url(bahan/produk/1.jpg);
+  background-image: url(/bahan/produk/1.jpg);
   background-position: center;
   background-size: cover;
 }
 .kotak2 {
   width: 450px;
   height: 250px;
-  background-image: url(bahan/produk/2.jpg);
+  background-image: url(/bahan/produk/2.jpg);
   background-position: center;
   background-size: cover;
 }
 .kotak3 {
   width: 350px;
   height: 250px;
-  background-image: url(bahan/produk/3.png);
+  background-image: url(/bahan/produk/3.png);
   background-position: center;
   background-size: cover;
 }
 .kotak4 {
   width: 600px;
   margin-bottom: 200px;
-  background-image: url(bahan/produk/4.jpg);
+  background-image: url(/bahan/produk/4.jpg);
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -59,7 +93,7 @@ header {
 .kotak5 {
   width: 500px;
   margin-bottom: 200px;
-  background-image: url(bahan/produk/5.jpg);
+  background-image: url(/bahan/produk/5.jpg);
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -79,11 +113,16 @@ header {
 
 .jk {
   font-size: 2.7rem;
-  margin-left: 70px;
+  margin-left: 40px;
   margin-bottom: 20px;
 }
-.ft {
+.tk {
+  margin-left: 40px;
 }
+.fr {
+  margin: 5%;
+}
+
 .f3 {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -98,7 +137,7 @@ header {
 /* live subscibe */
 .live-yt {
   width: 100vw;
-  background-image: url(bahan/vector.png);
+  background-image: url(/bahan/vector.png);
 }
 
 .subscribe {
@@ -133,10 +172,7 @@ header {
   .k1 {
     display: block;
   }
-  .logo {
-    width: 170px;
-    height: 23px;
-  }
+
   nav {
     padding: 1px;
   }
@@ -157,8 +193,34 @@ header {
     margin-top: 30px;
     font-size: 1rem;
   }
+
+  .produk {
+    font-size: 0.6rem;
+  }
   .f4 {
     font-size: 0.9rem;
+  }
+  .bg-lg1 {
+    top: 0;
+    z-index: -99;
+    opacity: 3%;
+    position: absolute;
+    background-image: url(webdesain/kiri.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 364px;
+    height: 700px;
+  }
+  .bg-lg2 {
+    opacity: 3%;
+    position: absolute;
+    background-image: url(webdesain/kanan.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    right: 0;
+    width: 364px;
+    height: 700px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -185,10 +247,7 @@ header {
   .k {
     padding: 20px;
   }
-  .logo {
-    width: 170px;
-    height: 23px;
-  }
+
   nav {
     padding: 1px;
   }

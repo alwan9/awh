@@ -1,41 +1,4 @@
-.deskripsi1 {
-  font-size: 3vh;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
-  margin-top: 0;
-  margin-bottom: 2%;
-}
 
-.logo {
-  height: 25px;
-  width: 170px;
-}
-.bg-lg1 {
-  top: 0;
-  z-index: -99;
-  opacity: 3%;
-  position: absolute;
-  background-image: url(webdesain/kiri.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 1500px;
-  height: 1500px;
-}
-.bg-lg2 {
-  opacity: 3%;
-  position: absolute;
-  background-image: url(webdesain/kanan.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  right: 0;
-  width: 1500px;
-  height: 1500px;
-}
-.jdll {
-  margin-bottom: 50px;
-}
 
 img {
   width: 100%;
@@ -66,28 +29,4 @@ img {
   width: 70%;
   margin-right: 15%;
   margin-left: 15%;
-}
-@media screen and (max-width: 700px) {
-  .bg-lg1 {
-    top: 0;
-    z-index: -99;
-    opacity: 3%;
-    position: absolute;
-    background-image: url(webdesain/kiri.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 364px;
-    height: 700px;
-  }
-  .bg-lg2 {
-    opacity: 3%;
-    position: absolute;
-    background-image: url(webdesain/kanan.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    right: 0;
-    width: 364px;
-    height: 700px;
-  }
 }
