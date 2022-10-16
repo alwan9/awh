@@ -5,12 +5,12 @@
 body {
   background-color: black;
 }
-.nav {
-  padding-top: 35px;
-  padding-right: 50px;
-}
+
 .f1 {
   width: 100%;
+}
+.sj {
+  margin-bottom: 23%;
 }
 .lr {
   width: 85%;
@@ -19,9 +19,16 @@ body {
   margin-right: 50px;
   margin-bottom: 70px;
 }
+.lr2 {
+  margin-right: 50px;
+  margin-left: 50px;
+}
 .logo {
   height: 20px;
-  width: 170px;
+}
+.logoweb {
+  width: 200px;
+  margin: 50px;
 }
 .jdll {
   margin-bottom: 50px;
@@ -52,17 +59,11 @@ body {
   width: 1500px;
   height: 1500px;
 }
-.logo {
-  height: 25px;
-}
+
 header {
   background-image: url(../bahan/bg.png);
   height: 100vh;
   width: 100vw;
-}
-
-.burger {
-  width: 20px;
 }
 
 .jk1 {
@@ -189,9 +190,7 @@ header {
     display: block;
     padding: 1rem;
   }
-  .ts {
-    display: none;
-  }
+
   footer {
     margin-left: 20px;
   }
@@ -283,9 +282,7 @@ header {
     font-size: 0.5rem;
     display: none;
   }
-  .ts {
-    display: none;
-  }
+
   .f2 {
     font-size: 0.8rem;
   }
