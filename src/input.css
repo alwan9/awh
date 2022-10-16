@@ -91,13 +91,13 @@ header {
 }
 .kotak3 {
   height: 250px;
-  background-image: url(../bahan/produk/3.png);
+  background-image: url(../bahan/produk/4.jpg);
   background-position: center;
   background-size: cover;
 }
 .kotak4 {
   margin-bottom: 200px;
-  background-image: url(../bahan/produk/4.jpg);
+  background-image: url(../bahan/produk/3.png);
   background-position: center;
   background-size: cover;
   height: 300px;
