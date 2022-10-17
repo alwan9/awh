@@ -1,9 +1,7 @@
-
 /* grid-global */
 .grid1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  background-color: #00000044;
   grid-gap: 5px;
   align-items: center;
   justify-content: center;
