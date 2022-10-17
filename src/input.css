@@ -4,6 +4,11 @@
 
 body {
   background-color: black;
+  color: white;
+}
+
+.medsos {
+  display: flex;
 }
 
 .f1 {
@@ -40,24 +45,24 @@ body {
 .bg-lg1 {
   top: 0;
   z-index: -99;
-  opacity: 3%;
+  opacity: 10%;
   position: absolute;
   background-image: url(../bahan/kiri.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1500px;
-  height: 1500px;
+  width: 1200px;
+  height: 1200px;
 }
 .bg-lg2 {
-  opacity: 3%;
+  opacity: 10%;
   position: absolute;
   background-image: url(../bahan/kanan.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
   right: 0;
-  width: 1500px;
-  height: 1500px;
+  width: 1200px;
+  height: 1200px;
 }
 
 header {
@@ -74,7 +79,7 @@ header {
 }
 
 .kotak {
-  background-color: red;
+  background-color: rgb(58, 58, 58);
   margin: 20px;
 }
 .kotak1 {
@@ -137,10 +142,10 @@ header {
   margin-bottom: 30px;
 }
 .ms {
-  width: 30px;
-  height: 30px;
-  bottom: 0%;
-  right: 0%;
+  margin-top: 25px;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
 }
 
 /* live subscibe */
@@ -214,24 +219,24 @@ header {
   .bg-lg1 {
     top: 0;
     z-index: -99;
-    opacity: 3%;
+    opacity: 10%;
     position: absolute;
-    background-image: url(webdesain/kiri.png);
+    background-image: url(../bahan/kiri.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 364px;
-    height: 700px;
+    width: 464px;
+    height: 600px;
   }
   .bg-lg2 {
-    opacity: 3%;
+    opacity: 10%;
     position: absolute;
-    background-image: url(webdesain/kanan.png);
+    background-image: url(../bahan/kanan.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
     right: 0;
-    width: 364px;
-    height: 700px;
+    width: 464px;
+    height: 600px;
   }
 
   .tk2 {
@@ -305,6 +310,12 @@ header {
   .k {
     padding: 1rem;
   }
+  .ms {
+    margin-top: 15px;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+  }
 }
 /* responsive kotak*/
 @media screen and (max-width: 850px) {
@@ -327,7 +338,7 @@ header {
 
 @media screen and (max-width: 720px) {
   .kotak {
-    background-color: red;
+    background-color: rgb(58, 58, 58);
     margin: 5px;
   }
   .kotak1 {
@@ -348,7 +359,7 @@ header {
 }
 @media screen and (max-width: 550px) {
   .kotak {
-    background-color: red;
+    background-color: rgb(58, 58, 58);
     margin: 5px;
   }
   .kotak1 {
