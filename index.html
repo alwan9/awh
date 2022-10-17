@@ -1,197 +1,277 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link href="src/input.css" rel="stylesheet" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="src/output.css" rel="stylesheet">
-    <link href="src/input.css" rel="stylesheet">
-</head>
-
-
-<body class="bg-black text-white ">
+  <body class="bg-black text-white">
     <header>
-        <!-- component -->
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-        <div class="w-full text-white  dark-mode:text-gray-200 dark-mode:bg-gray-800 ">
-            <div x-data="{ open: false }"
-                class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-                <div class="p-4 flex flex-row items-center justify-between">
+      <!-- component -->
+      <script
+        src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+        defer
+      ></script>
+      <div
+        class="w-full text-white dark-mode:text-gray-200 dark-mode:bg-gray-800"
+      >
+        <div
+          x-data="{ open: false }"
+          class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
+        >
+          <div class="p-4 flex flex-row items-center justify-between">
+            <img
+              class="text-lg font-semibold logo tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
+              src="bahan/LOGO1 1.png"
+              alt=""
+            />
+            <button
+              class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+              @click="open = !open"
+            >
+              <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                <path
+                  x-show="!open"
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+                <path
+                  x-show="open"
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <nav
+            id="home"
+            :class="{'flex': open, 'hidden': !open}"
+            class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row"
+          >
+            <a
+              class="px-4 py-2 mt-2 text-sm font-semibold text-whiterounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              href="#home"
+              >Home</a
+            >
 
-                    <img class="text-lg font-semibold logo tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
-                        src="bahan/LOGO1 1.png" alt="">
-                    <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
-                        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-                            <path x-show="!open" fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
-                            <path x-show="open" fill-rule="evenodd"
-                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </button>
+            <a
+              class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              href="#About"
+              >About</a
+            >
+            <a
+              class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              href="eror/index.html "
+              >Contact</a
+            >
+            <div
+              @click.away="open = false"
+              class="relative"
+              x-data="{ open: false }"
+            >
+              <button
+                @click="open = !open"
+                class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              >
+                <span>Production</span>
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  :class="{'rotate-180': open, 'rotate-0': !open}"
+                  class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="open"
+                x-transition:enter="transition ease-out duration-100"
+                x-transition:enter-start="transform opacity-0 scale-95"
+                x-transition:enter-end="transform opacity-100 scale-100"
+                x-transition:leave="transition ease-in duration-75"
+                x-transition:leave-start="transform opacity-100 scale-100"
+                x-transition:leave-end="transform opacity-0 scale-95"
+                class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48"
+              >
+                <div
+                  class="px-2 py-2 bg-neutral-700 rounded-md shadow dark-mode:bg-gray-800"
+                >
+                  <a
+                    class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="artist/index.html"
+                    >Artist</a
+                  >
+                  <a
+                    class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="webdesain/index.html"
+                    >Web Design</a
+                  >
+                  <a
+                    class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="videography/index.html"
+                    >Videography</a
+                  >
+                  <a
+                    class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="achievement/index.html"
+                    >Achievement</a
+                  >
+                  <a
+                    class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="manipulasi/index.html"
+                    >Manipulation</a
+                  >
                 </div>
-                <nav id="home" :class="{'flex': open, 'hidden': !open}"
-                    class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-                    <a class="px-4 py-2 mt-2 text-sm font-semibold text-whiterounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                        href="#home">Home</a>
-
-                    <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                        href="#About">About</a>
-                    <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                        href="#Contact ">Contact</a>
-                    <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                        <button @click="open = !open"
-                            class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
-                            <span>Production</span>
-                            <svg fill="currentColor" viewBox="0 0 20 20"
-                                :class="{'rotate-180': open, 'rotate-0': !open}"
-                                class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <div x-show="open" x-transition:enter="transition ease-out duration-100"
-                            x-transition:enter-start="transform opacity-0 scale-95"
-                            x-transition:enter-end="transform opacity-100 scale-100"
-                            x-transition:leave="transition ease-in duration-75"
-                            x-transition:leave-start="transform opacity-100 scale-100"
-                            x-transition:leave-end="transform opacity-0 scale-95"
-                            class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
-                            <div class="px-2 py-2 bg-neutral-700 rounded-md shadow dark-mode:bg-gray-800">
-                                <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                    href="artist/index.html">Artist</a>
-                                <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                    href="webdesain/index.html">Web Design</a>
-                                <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                    href="videography/index.html">Videography</a>
-                                <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                    href="achievement/index.html">Achievement</a>
-                                <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                    href="manipulasi/index.html">Manipulation</a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+              </div>
             </div>
+          </nav>
         </div>
+      </div>
 
-        <div class="justify-items-center ">
-            <h1 class="j text-5xl text-center font-bold   ">COME JOIN US <span class="text-blue-200 ">HERE </span>
-            </h1>
-            <h2 class="sj text-2xl text-center  ">this website is about artworkhex</h2>
-        </div>
-
+      <div class="justify-items-center">
+        <h1 class="j text-5xl text-center font-bold">
+          COME JOIN US
+          <span class="text-blue-200">
+            <a href="https://www.instagram.com/artworkhex_ofc/">HERE</a></span
+          >
+        </h1>
+        <h2 class="sj text-2xl text-center">
+          this website is about artworkhex
+        </h2>
+      </div>
     </header>
-    <div class="k1 k flex items-center ">
-        <img class="lr f1" src="bahan/image.png" alt="">
-        <div class="tk">
-            <div id="About" class="jk text-5xl font-bold ">
-                About AWH
-            </div>
-            <div class="jd  text-2xl mt-10  ">
-                sebuah brand yang dibuat pada tahun 2019 dan dibuat oleh alwan. Awal pembuatan artworkhex hanya untuk
-                kesenangan pribadi
-                dan fokus dalam karya seni. Saat ini artworkhex mencakup bidang, manipulasi, fotography, videography,
-                coding
-                <br><br>
-                pada tahun 2022 artworkhex memiliki 3 akun media sosial aktif diantaranya
-                youtube, instagram, github. dipimpin oleh <a href="https://www.instagram.com/zzls__/">@zzls__</a> and <a
-                    href="https://www.instagram.com/alfattaufikn/">@alfattaufik</a>
-
-            </div>
+    <div class="k1 k flex items-center">
+      <img class="lr f1" src="bahan/image.png" alt="" />
+      <div class="tk">
+        <div id="About" class="jk text-5xl font-bold">About AWH</div>
+        <div class="jd text-2xl mt-10">
+          sebuah brand yang dibuat pada tahun 2019 dan dibuat oleh alwan. Awal
+          pembuatan artworkhex hanya untuk kesenangan pribadi dan fokus dalam
+          karya seni. Saat ini artworkhex mencakup bidang, manipulasi,
+          fotography, videography, coding
+          <br /><br />
+          pada tahun 2022 artworkhex memiliki 3 akun media sosial aktif
+          diantaranya youtube, instagram, github. dipimpin oleh
+          <a href="https://www.instagram.com/zzls__/">@zzls__</a> and
+          <a href="https://www.instagram.com/alfattaufikn/">@alfattaufik</a>
         </div>
+      </div>
     </div>
-    <div class="bg-slate-900 w-full h-100 ">
-    </div>
+    <div class="bg-slate-900 w-full h-100"></div>
 
     <div class="jk text-center mt-20 font-bold">
-        <span class="text-blue-200 text-center justify-center  "> <a
-                href="https://www.youtube.com/channel/UChSq1GJ6ikwdUflQk5LE9Aw"> Youtube</a></span> Account
+      <span class="text-blue-200 text-center justify-center">
+        <a href="https://www.youtube.com/channel/UChSq1GJ6ikwdUflQk5LE9Aw">
+          Youtube</a
+        ></span
+      >
+      Account
     </div>
-    <div class="live-yt flex items-center bg-center bg-cover bg-no-repeat ">
-        <div class="subscribe">
-
-            <div class="xl sub">
-                Subscribers
-                <div id="subscriberCount"></div>
-            </div>
-
-            <div class="xl sub">
-                Video Views
-                <div id="viewCount"></div>
-            </div>
-
-            <div class="xl sub">
-                Video Count
-                <div id="videoCount"></div>
-            </div>
+    <div class="live-yt flex items-center bg-center bg-cover bg-no-repeat">
+      <div class="subscribe">
+        <div class="xl sub">
+          Subscribers
+          <div id="subscriberCount"></div>
         </div>
+
+        <div class="xl sub">
+          Video Views
+          <div id="viewCount"></div>
+        </div>
+
+        <div class="xl sub">
+          Video Count
+          <div id="videoCount"></div>
+        </div>
+      </div>
     </div>
 
     <div>
-        <img src="bahan/artworkhex4 1.png" alt="">
-        <div class="k tk2 tk">
-            <div class="jk text-5xl font-bold">
-                logo meaning
-            </div>
-            <div class="jd text-2xl ">AWH adalah singkatan dari artworkhex “A” yang berarti art/seni “W” yang berarti
-                work/karya dan “H” yang berarti hex/code
-                warna
-                <br>
-                memiliki arti karya seni yang menggunakan code warna.
-            </div>
+      <img src="bahan/artworkhex4 1.png" alt="" />
+      <div class="k tk2 tk">
+        <div class="jk text-5xl font-bold">logo meaning</div>
+        <div class="jd text-2xl">
+          AWH adalah singkatan dari artworkhex “A” yang berarti art/seni “W”
+          yang berarti work/karya dan “H” yang berarti hex/code warna
+          <br />
+          memiliki arti karya seni yang menggunakan code warna.
         </div>
+      </div>
     </div>
 
-    <div class="k ">
-        <div class="jk text-5xl font-bold mt-20  ">
-            Production
-        </div>
-        <div class="produk inset-0  ">
-            <div class="flex items-center grid grid-cols-3 gap-4 ">
-                <a href="webdesain/index.html">
-                    <div class="kotak1 kotak text-2xl text-center object-center produk "> UI/UX </div>
-                </a>
-                <a href="manipulasi/index.html">
-                    <div class="kotak2 kotak text-2xl text-center object-center produk "> Manipulation</div>
-                </a>
-                <a href="artist/index.html">
-                    <div class="kotak3 kotak text-2xl text-center object-center produk "> Art</div>
-                </a>
+    <div class="k">
+      <div class="jk text-5xl font-bold mt-20">Production</div>
+      <div class="produk inset-0">
+        <div class="flex items-center grid grid-cols-3 gap-4">
+          <a href="webdesain/index.html">
+            <div class="kotak1 kotak text-2xl text-center object-center produk">
+              UI/UX
             </div>
-            <div class="flex items-center w-full grid grid-cols-2 gap-4">
-                <a href="videography/index.html">
-                    <div class="kotak4 kotak text-2xl text-center object-center produk "> Videography</div>
-                </a>
-                <a href="achievement/index.html">
-                    <div class="kotak5 kotak text-2xl text-center object-center produk "> Achievement</div>
-                </a>
+          </a>
+          <a href="manipulasi/index.html">
+            <div class="kotak2 kotak text-2xl text-center object-center produk">
+              Manipulation
             </div>
+          </a>
+          <a href="artist/index.html">
+            <div class="kotak3 kotak text-2xl text-center object-center produk">
+              Art
+            </div>
+          </a>
         </div>
+        <div class="flex items-center w-full grid grid-cols-2 gap-4">
+          <a href="videography/index.html">
+            <div class="kotak4 kotak text-2xl text-center object-center produk">
+              Videography
+            </div>
+          </a>
+          <a href="achievement/index.html">
+            <div class="kotak5 kotak text-2xl text-center object-center produk">
+              Achievement
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <footer id="Contact" class="fr flex ">
-        <div>
-            <img class="fl mt-20 " src="bahan/LOGO1 1.png" alt="">
-            <div class="text-2xl f2 ">
-                artist, Dessainer, Coding, Videografi
-            </div>
-            <div class="text-xl f3  ">
-                Information
-            </div>
-            <div class="text-xl f4 ">
-                hubungi kami jika anda membutuhkan sesuatu pada artworkhex@gmail.com
-                <br>
-                contact us if you need anything at artworkhex@gmail.com
-            </div>
+    <footer id="Contact" class="fr flex">
+      <div>
+        <img class="fl mt-20" src="bahan/LOGO1 1.png" alt="" />
+        <div class="text-2xl f2">artist, Dessainer, Coding, Videografi</div>
+        <div class="text-xl f3">Information</div>
+        <div class="text-xl f4">
+          hubungi kami jika anda membutuhkan sesuatu pada artworkhex@gmail.com
+          <br />
+          contact us if you need anything at artworkhex@gmail.com
         </div>
-
+        <div class="medsos">
+          <a href="eror/index.html"
+            ><img class="ms" src="/bahan/medsos/1.png" alt=""
+          /></a>
+          <a href="eror/index.html"
+            ><img class="ms" src="/bahan/medsos/2.png" alt=""
+          /></a>
+          <a href="eror/index.html"
+            ><img class="ms" src="/bahan/medsos/3.png" alt=""
+          /></a>
+          <a href="eror/index.html"
+            ><img class="ms" src="/bahan/medsos/4.png" alt=""
+          /></a>
+        </div>
+      </div>
     </footer>
-
-
-</body>
-<script src="src/script.js"></script>
-
+  </body>
+  <script src="src/script.js"></script>
 </html>
+
+<!-- horor, petualang, 1 pemanian utama
+kekasih - dukun naksir wadon  - berpisah karna penculikan - kekasih (lanang) balas dendam(dukun) - 
+adventure + lawan hantu - ketemu kekasih (wadon) - duarr dunia berwarna -->
